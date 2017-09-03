@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/airbnb_place_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_house"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/airbnb_place_image"
+        android:layout_marginBottom="20dp"
+        android:background="#88000000"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="$60"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/airbnb_place_image"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cozy room wifi with balcony"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Room,  4 Reviews, San Francisco, United States"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_alignBottom="@id/airbnb_place_image"
+        android:layout_alignRight="@id/airbnb_place_image"
+        android:layout_marginBottom="-33dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_profile"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
